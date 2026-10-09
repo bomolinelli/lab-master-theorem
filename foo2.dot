@@ -1,0 +1,32 @@
+digraph {
+    node [shape=box fontname="Courier" fontsize="10"]
+    0 [label="foo2([1, 2, 3, 4, 5, 6, 7, 8])"]
+    1 [label="foo2([1, 2, 3, 4])"]
+    2 [label="foo2([1, 2])"]
+    3 [label="foo2([1])"]
+    4 [label="foo2([2])"]
+    5 [label="foo2([3, 4])"]
+    6 [label="foo2([3])"]
+    7 [label="foo2([4])"]
+    8 [label="foo2([5, 6, 7, 8])"]
+    9 [label="foo2([5, 6])"]
+    10 [label="foo2([5])"]
+    11 [label="foo2([6])"]
+    12 [label="foo2([7, 8])"]
+    13 [label="foo2([7])"]
+    14 [label="foo2([8])"]
+    0 -> 1
+    1 -> 2
+    2 -> 3
+    2 -> 4
+    1 -> 5
+    5 -> 6
+    5 -> 7
+    0 -> 8
+    8 -> 9
+    9 -> 10
+    9 -> 11
+    8 -> 12
+    12 -> 13
+    12 -> 14
+}
